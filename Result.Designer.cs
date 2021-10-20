@@ -1,5 +1,5 @@
 ﻿
-namespace MyFirstWinFormsApp
+namespace Hangman
 {
     partial class Result
     {

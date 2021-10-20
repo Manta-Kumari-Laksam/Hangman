@@ -1,14 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MyFirstWinFormsApp
+namespace Hangman
 {
     public partial class Preload : Form
     {
@@ -23,9 +16,6 @@ namespace MyFirstWinFormsApp
             Hide();
             Dashboard playground = new Dashboard();
             playground.ShowDialog();
-            //result1 = 1;
-            //Result result = new Result();
-            //result.ShowDialog();
             Close();
         }
 

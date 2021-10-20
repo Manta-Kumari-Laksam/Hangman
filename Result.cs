@@ -2,7 +2,7 @@
 using System.Media;
 using System.Windows.Forms;
 
-namespace MyFirstWinFormsApp
+namespace Hangman
 {
     public partial class Result : Form
     {
@@ -52,6 +52,7 @@ namespace MyFirstWinFormsApp
 
         private void goHomeBtn_Click(object sender, EventArgs e)
         {
+            soundPlayer.Stop();
             Hide();
             Preload preload = new Preload();
             preload.ShowDialog();

@@ -1,0 +1,5 @@
+D:\PublishHangman\Hangman.exe
+D:\PublishHangman\Hangman.dll
+D:\PublishHangman\Hangman.deps.json
+D:\PublishHangman\Hangman.runtimeconfig.json
+D:\PublishHangman\Hangman.pdb

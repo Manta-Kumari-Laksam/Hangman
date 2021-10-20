@@ -1,5 +1,5 @@
 ﻿
-namespace MyFirstWinFormsApp
+namespace Hangman
 {
     partial class Dashboard
     {
@@ -433,7 +433,7 @@ namespace MyFirstWinFormsApp
             this.hangmanImage.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.hangmanImage.BackColor = System.Drawing.SystemColors.Control;
             this.hangmanImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.hangmanImage.Image = global::MyFirstWinFormsApp.Properties.Resources.Hang1;
+            this.hangmanImage.Image = global::Hangman.Properties.Resources.Hang1;
             this.hangmanImage.Location = new System.Drawing.Point(282, 12);
             this.hangmanImage.Name = "hangmanImage";
             this.hangmanImage.Size = new System.Drawing.Size(341, 239);

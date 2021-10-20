@@ -1,16 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using System.Text.RegularExpressions;
 
-namespace MyFirstWinFormsApp
+namespace Hangman
 {
     public partial class Dashboard : Form
     {
@@ -145,6 +139,7 @@ namespace MyFirstWinFormsApp
                 else if (wrongGuessLetter.Contains(guessLetter))
                 {
                     //Do Nothing
+                    //So that wrong letter does't get picked up again.
                 }
                 else
                 {
@@ -167,58 +162,6 @@ namespace MyFirstWinFormsApp
                     }
                 }
             }
-
-
-            /*
-            
-            if (guessWord.Contains(guessLetter, StringComparison.OrdinalIgnoreCase))
-            {
-                chosenLetter.BackColor = Color.Blue;
-                for(int i=0; i< guessWord.Length; i++)
-                {
-                    if (guessWord[i].Equals(guessLetter))
-                    {
-                        copyCurrentChar[i] = guessLetter;
-                    }
-                }
-                copyCurrent = new string(copyCurrentChar);
-                if(guessLetter.Equals(copyCurrent) || !copyCurrent.Contains("_"))
-                {
-                    result = 1;
-                    Hide();
-                    Result resultbox = new Result();
-                    resultbox.ShowDialog();
-                    Close();
-
-                }
-                chosenWord.Text = "";
-                DisplayGuessWordDashes(copyCurrent);
-            }
-            else if(wrongGuessLetter.Contains(guessLetter))
-            {
-                //Do Nothing
-            }
-            else
-            {
-                wrongGuesses++;
-                wrongGuessLetter[guessIndex++] = guessLetter;
-                if (wrongGuesses < 6)
-                {
-                    HangmanImage.Image = hangmanImages[wrongGuesses];
-                    chosenLetter.BackColor = Color.Red;
-                }
-                else
-                {
-                    HangmanImage.Image = hangmanImages[wrongGuesses];
-                    chosenLetter.BackColor = Color.Red;
-                    Hide();
-                    result = 0;
-                    Result resultbox = new Result();
-                    resultbox.ShowDialog();
-                    Close();
-                }
-            }
-            */
         }
         private void WordChosenByPlayer1()
         {
@@ -282,10 +225,6 @@ namespace MyFirstWinFormsApp
                 {
                     copyWordChosenByPlayer1[i] = wordChosenByPlayer1[i];
                 }
-
-                //guessWord = new string(copyWordChosenByPlayer1);
-                //twoPlayers = false;
-                //Dashboard_Load(sender, e);
                 LoadWordChosenByPlayer1(copyWordChosenByPlayer1);
             }
         }

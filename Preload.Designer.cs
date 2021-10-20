@@ -1,5 +1,5 @@
 ﻿
-namespace MyFirstWinFormsApp
+namespace Hangman
 {
     partial class Preload
     {
@@ -71,7 +71,7 @@ namespace MyFirstWinFormsApp
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox1.BackgroundImage = global::MyFirstWinFormsApp.Properties.Resources.hangmanBg;
+            this.pictureBox1.BackgroundImage = global::Hangman.Properties.Resources.hangmanBg;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(272, 50);
