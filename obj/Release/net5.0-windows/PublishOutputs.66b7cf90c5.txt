@@ -1,5 +1,0 @@
-D:\Hangman\Hangman.exe
-D:\Hangman\Hangman.dll
-D:\Hangman\Hangman.deps.json
-D:\Hangman\Hangman.runtimeconfig.json
-D:\Hangman\Hangman.pdb
